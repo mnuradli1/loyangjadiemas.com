@@ -528,6 +528,44 @@ body {
   transform: translateX(3px);
 }
 
+.cta-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.cta-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.05rem 2.25rem;
+  background: transparent;
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1px solid rgba(200,164,92,0.5);
+  transition: all 0.3s ease;
+}
+
+.cta-btn-secondary:hover {
+  background: rgba(200,164,92,0.1);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.cta-btn-secondary svg {
+  width: 18px; height: 18px;
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 2;
+}
+
 .cta-note {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.4);
@@ -768,12 +806,19 @@ body {
   <h2 class="cta-heading">Hadiri Momen Ekslusif Ini</h2>
   <p class="cta-sub">Konfirmasi kehadiran Anda sekarang. Tempat terbatas.</p>
 
-  <a href="https://forms.gle/Z32RxowgDvDCAjh77" class="cta-btn" target="_blank" rel="noopener">
-    Konfirmasi Kehadiran
-    <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-  </a>
+  <div class="cta-buttons">
+    <a href="https://forms.gle/Z32RxowgDvDCAjh77" class="cta-btn" target="_blank" rel="noopener">
+      Konfirmasi Kehadiran
+      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
 
-  <p class="cta-note">Gratis &amp; terbuka untuk umum</p>
+    <a href="https://lynk.id/nuradli8/53z96pz29gye" class="cta-btn-secondary" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+      Beli Edisi Spesial (Signed)
+    </a>
+  </div>
+
+  <p class="cta-note">Buku edisi tanda tangan tersedia terbatas</p>
 </section>
 
 <!-- FOOTER -->
